@@ -9,8 +9,8 @@
                     <div class="col-md-4 text-right">
                         <p>
                             <span class="clickable" data-toggle="collapse" :data-target="'#' + section.name + '_gui_body'">
-                                <i class="fa fa-fw fa-chevron-up"></i>
                                 <i class="fa fa-fw fa-chevron-down"></i>
+                                <i class="fa fa-fw fa-chevron-up"></i>
                             </span>
                         </p>
                     </div>
