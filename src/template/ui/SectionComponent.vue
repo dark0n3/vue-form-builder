@@ -14,7 +14,7 @@
                     Preview
                 </button>
 
-                <button class="btn btn-default" @click="addSection">Add Section</button>
+                <button class="btn btn-default" @click="addSection">HUI</button>
             </div>
         </div>
 
@@ -39,7 +39,7 @@
                             </div>
                         </div>
                     </div>
-                    <div :id="section.name + '_body'" class="collapse">
+                    <div :id="section.name + '_body'" class="collapse show">
                         <div class="card-body sectionBody">
                             <row-component :section="section"></row-component>
                         </div>
