@@ -11,10 +11,10 @@
             <div class="col-md-10 text-right">
                 <button class="btn btn-default" @click="preview">
                     <font-awesome-icon icon="image"/>
-                    Preview
+                    TEST
                 </button>
 
-                <button class="btn btn-default" @click="addSection">HUI</button>
+                <button class="btn btn-default" @click="addSection">TEST</button>
             </div>
         </div>
 
