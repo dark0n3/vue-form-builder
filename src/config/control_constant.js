@@ -13,6 +13,7 @@ import GUINumberControl from 'sethFormBuilder/gui/ui/controls/NumberControl';
 import GUISelectControl from 'sethFormBuilder/gui/ui/controls/SelectControl';
 import GUITextControl from 'sethFormBuilder/gui/ui/controls/TextControl';
 import GUITimePickerControl from 'sethFormBuilder/gui/ui/controls/TimePickerControl';
+import GUIHyperlinkControl from 'sethFormBuilder/gui/ui/controls/HyperlinkControls'
 
 // TEMPLATE Control
 import TEMPLATETextControl from 'sethFormBuilder/template/ui/common/controls/TextControl';
@@ -21,6 +22,7 @@ import TEMPLATECheckboxControl from 'sethFormBuilder/template/ui/common/controls
 import TEMPLATEDatePickerControl from 'sethFormBuilder/template/ui/common/controls/DatePickerControl';
 import TEMPLATETimePickerControl from 'sethFormBuilder/template/ui/common/controls/TimePickerControl';
 import TEMPLATESelectControl from 'sethFormBuilder/template/ui/common/controls/SelectControl';
+import TEMPLATEHyperlinkControl from 'sethFormBuilder/template/ui/common/controls/Hyperlink'
 
 // CONFIG CONTROL
 import SIDEBARDatePickerControl from 'sethFormBuilder/template/ui/sidebar_items/DatePickerConfigComponent';
@@ -29,6 +31,7 @@ import SIDEBARSelectControl from 'sethFormBuilder/template/ui/sidebar_items/Sele
 import SIDEBARNumberControl from 'sethFormBuilder/template/ui/sidebar_items/NumberConfigComponent';
 import SIDEBARTextControl from 'sethFormBuilder/template/ui/sidebar_items/TextConfigComponent';
 import SIDEBARCheckboxControl from 'sethFormBuilder/template/ui/sidebar_items/CheckboxConfigComponent';
+import SIDEBARHyperlinkControl from 'sethFormBuilder/template/ui/sidebar_items/HyperlinkConfigComponent'
 
 // Template Control
 // special key for control:
@@ -94,6 +97,15 @@ const CONTROL_TYPES = {
             gui: GUICheckboxControl,
             template: TEMPLATECheckboxControl,
             config: SIDEBARCheckboxControl
+        }
+    },
+    hyperlink: {
+        label: "Hyperlink",
+        icon: faCheck,
+        source: {
+            gui: GUIHyperlinkControl,
+            template: TEMPLATEHyperlinkControl,
+            config: SIDEBARHyperlinkControl
         }
     }
 };

@@ -69,6 +69,11 @@
                 <label v-if="control.type === 'select'">
                     <input type="checkbox" name="isMultiple" v-model="control.isMultiple"> Multiple Select
                 </label>
+
+                <!-- for hyperlink -->
+                <label v-if="control.type === 'hyperlink'">
+                    <input type="text" name="ref" v-model="control.ref"> Link
+                </label>
             </div>
         </div>
 

@@ -107,6 +107,10 @@ FORM_CONSTANTS.Type = {
         label:"Checkbox",
         icon: faCheck
     },
+    hyperlink: {
+        label: "Hyperlink",
+        icon: faCheck
+    }
 };
 
 FORM_CONSTANTS.WidthOptions = {
