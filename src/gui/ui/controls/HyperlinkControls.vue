@@ -18,10 +18,11 @@
                 {{control.label}}
             </label>
 
-                <a class="form-control"
-                          :href="this.control.ref"
-                          :readonly="this.control.readonly"
-                          :name="control.fieldName">{{control.fieldName}}</a>
+                <a
+                    :href="this.control.ref"
+                    :readonly="this.control.readonly"
+                    :name="control.fieldName">{{control.fieldName}}
+                </a>
         </div>
     </div>
 </template>

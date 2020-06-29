@@ -10,10 +10,6 @@
                 <a :href="control.ref" :readonly="control.readonly" :value="demo_value">
                     {{control.fieldName}}
                 </a>
-<!--                 <input type="text" class="form-control"
-                       :readonly="control.readonly"
-                       :name="control.fieldName"
-                       :value="demo_value"> -->
             </div>
         </div>
         <div class="controlItem row" :id="control.name" v-else>
@@ -25,10 +21,6 @@
                 <a :href="control.ref" :readonly="control.readonly" :value="demo_value">
                     {{control.fieldName}}
                 </a>
-<!--                     <input type="text" class="form-control"
-                           :readonly="control.readonly"
-                           :name="control.fieldName"
-                           :value="demo_value"> -->
                 </div>
             </div>
         </div>
