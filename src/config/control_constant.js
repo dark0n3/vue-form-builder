@@ -113,7 +113,7 @@ const CONTROL_TYPES = {
     },
     header: {
         label: "Header",
-        icon: faPencil,
+        icon: faCheck,
         source: {
             gui: GUIHeaderControl,
             template: TEMPLATEHeaderControl,
