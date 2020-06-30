@@ -113,7 +113,7 @@ FORM_CONSTANTS.Type = {
     },
     header: {
         label: "Header",
-        icon: faHead
+        icon: faCheck
     }
 };
 
