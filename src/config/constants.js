@@ -114,6 +114,10 @@ FORM_CONSTANTS.Type = {
     header: {
         label: "Header",
         icon: faCheck
+    },
+    paragraph: {
+        label: "Paragraph",
+        icon: faCheck
     }
 };
 

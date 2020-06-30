@@ -74,6 +74,11 @@
                 <label v-if="control.type === 'hyperlink'">
                     <input type="text" name="ref" v-model="control.ref"> Link
                 </label>
+
+                <!-- for Paragraph -->
+                <label v-if="control.type === 'paragraph'">
+                    <textarea type="text" name="ref" v-model="control.paragraph"> Paragraph </textarea>
+                </label>
             </div>
         </div>
 

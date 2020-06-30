@@ -167,6 +167,8 @@
                         return "link";
                     case 'header':
                         return "Header"
+                    case 'paragraph':
+                        return "Paragraph"
                     case 'datepicker':
                         if (this.control.isTodayValue) {
                             return moment().format(CONTROL_CONSTANTS.DateFormat[this.control.dateFormat]);

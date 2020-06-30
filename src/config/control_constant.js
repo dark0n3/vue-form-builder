@@ -14,7 +14,8 @@ import GUISelectControl from 'sethFormBuilder/gui/ui/controls/SelectControl';
 import GUITextControl from 'sethFormBuilder/gui/ui/controls/TextControl';
 import GUITimePickerControl from 'sethFormBuilder/gui/ui/controls/TimePickerControl';
 import GUIHyperlinkControl from 'sethFormBuilder/gui/ui/controls/HyperlinkControls';
-import GUIHeaderControl from 'sethFormBuilder/gui/ui/controls/HeaderControl'
+import GUIHeaderControl from 'sethFormBuilder/gui/ui/controls/HeaderControl';
+import GUIParagraphControl from 'sethFormBuilder/gui/ui/controls/ParagraphControl'
 
 // TEMPLATE Control
 import TEMPLATETextControl from 'sethFormBuilder/template/ui/common/controls/TextControl';
@@ -25,6 +26,7 @@ import TEMPLATETimePickerControl from 'sethFormBuilder/template/ui/common/contro
 import TEMPLATESelectControl from 'sethFormBuilder/template/ui/common/controls/SelectControl';
 import TEMPLATEHyperlinkControl from 'sethFormBuilder/template/ui/common/controls/Hyperlink';
 import TEMPLATEHeaderControl from 'sethFormBuilder/template/ui/common/controls/HeaderControl';
+import TEMPLATEParagraphControl from 'sethFormBuilder/template/ui/common/controls/ParagraphControl'
 
 // CONFIG CONTROL
 import SIDEBARDatePickerControl from 'sethFormBuilder/template/ui/sidebar_items/DatePickerConfigComponent';
@@ -34,7 +36,8 @@ import SIDEBARNumberControl from 'sethFormBuilder/template/ui/sidebar_items/Numb
 import SIDEBARTextControl from 'sethFormBuilder/template/ui/sidebar_items/TextConfigComponent';
 import SIDEBARCheckboxControl from 'sethFormBuilder/template/ui/sidebar_items/CheckboxConfigComponent';
 import SIDEBARHyperlinkControl from 'sethFormBuilder/template/ui/sidebar_items/HyperlinkConfigComponent';
-import SIDEBARHeaderControl from 'sethFormBuilder/template/ui/sidebar_items/HeaderConfigComponent'
+import SIDEBARHeaderControl from 'sethFormBuilder/template/ui/sidebar_items/HeaderConfigComponent';
+import SIDEBARParagraphControl from 'sethFormBuilder/template/ui/sidebar_items/ParagraphConfigComponent'
 
 // Template Control
 // special key for control:
@@ -118,6 +121,15 @@ const CONTROL_TYPES = {
             gui: GUIHeaderControl,
             template: TEMPLATEHeaderControl,
             config: SIDEBARHeaderControl
+        }
+    },
+    paragraph: {
+        label: "Paragraph",
+        icon: faCheck,
+        source: {
+            gui: GUIParagraphControl,
+            template: TEMPLATEParagraphControl,
+            config: SIDEBARParagraphControl
         }
     }
 };
