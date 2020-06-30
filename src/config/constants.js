@@ -110,6 +110,10 @@ FORM_CONSTANTS.Type = {
     hyperlink: {
         label: "Hyperlink",
         icon: faCheck
+    },
+    header: {
+        label: "Header",
+        icon: faHead
     }
 };
 

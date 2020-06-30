@@ -1,23 +1,14 @@
 <template>
     <div class="controlItemWrapper" :class="control.className" :data-control-name="control.name">
         <div class="controlItem row" :id="control.name" v-if="labelPosition === 'left'">
-            <div class="col-md-4">
-                <label :class="{'bold': control.labelBold, 'italic': control.labelItalic, 'underline': control.labelUnderline}">
-                    {{control.label}}
-                </label>
-            </div>
             <div class="col-md-8 input-group">
-                <a :href="control.ref" :readonly="control.readonly" :value="demo_value">
-                    {{control.fieldName}}
-                </a>
+                <h4 class="modal-title" :value="demo_value">{{control.label}}</h4>
             </div>
         </div>
         <div class="controlItem row" :id="control.name" v-else>
             <div class="form-group col-md-12">
                 <div class="input-group">
-                <a :href="control.ref" :readonly="control.readonly" :value="demo_value">
-                    {{control.label}}
-                </a>
+                    <h4 class="modal-title" :value="demo_value">{{control.label}}</h4>
                 </div>
             </div>
         </div>
@@ -26,7 +17,7 @@
 
 <script>
     export default {
-        name: "Hyperlink",
+        name: "Header",
         props: ['control', 'labelPosition'],
         computed: {
             demo_value() {

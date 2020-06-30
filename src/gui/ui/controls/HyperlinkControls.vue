@@ -14,14 +14,10 @@
             </div>
         </div>
         <div v-else class="form-group">
-            <label :class="{'bold': control.labelBold, 'italic': control.labelItalic, 'underline': control.labelUnderline}">
-                {{control.label}}
-            </label>
-
                 <a
                     :href="this.control.ref"
                     :readonly="this.control.readonly"
-                    :name="control.fieldName">{{control.fieldName}}
+                    :name="control.fieldName">{{control.label}}
                 </a>
         </div>
     </div>

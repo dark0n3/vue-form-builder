@@ -165,6 +165,8 @@
                         return "Text here";
                     case 'hyperlink':
                         return "link";
+                    case 'header':
+                        return "Header"
                     case 'datepicker':
                         if (this.control.isTodayValue) {
                             return moment().format(CONTROL_CONSTANTS.DateFormat[this.control.dateFormat]);
