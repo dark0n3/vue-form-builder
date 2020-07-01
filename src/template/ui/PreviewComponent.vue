@@ -59,5 +59,7 @@
 </script>
 
 <style scoped>
-
+    .modal-backdrop {
+        position: inherit !important;
+    }
 </style>
