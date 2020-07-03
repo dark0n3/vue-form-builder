@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="row mt-2" v-if="control.type !== 'checkbox'">
+        <div class="row mt-2" v-if="control.type !== 'checkbox'" :class="control.type">
             <div class="col-md-12">
                 <div class="form-group">
                     <label>Default value</label>
