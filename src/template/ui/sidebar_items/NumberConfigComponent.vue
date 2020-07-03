@@ -14,10 +14,13 @@
                        v-model="control.decimalPlace" :disabled="control.isInteger">
             </div>
         </div>
+        <BaseConfigInputGroup />
     </div>
 </template>
 
 <script>
+import BaseConfigInputGroup from 'sethFormBuilder/template/ui/sidebar_items/BaseConfigInputGroup'
+
     export default {
         name: "NumberConfigComponent",
         props: {
