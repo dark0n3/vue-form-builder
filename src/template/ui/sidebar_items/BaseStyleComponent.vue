@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="row mt-2" v-if="control.type !== 'checkbox'" :class="control.type">
+    <div :class="control.type">
+        <div class="row mt-2 default-input" v-if="control.type !== 'checkbox'">
             <div class="col-md-12">
                 <div class="form-group">
                     <label>Default value</label>
@@ -11,11 +11,11 @@
 
         <div class="row mt-2">
             <div class="col-md-12">
-                <div class="form-group">
+                <div class="form-group control-label">
                     <label>Control label</label>
                     <input type="text" class="form-control" v-model="control.label">
                 </div>
-                <div class="form-group">
+                <div class="form-group font-type">
                     <label><input type="checkbox" v-model="control.labelBold"> Bold</label>
                     <label><input type="checkbox" v-model="control.labelItalic"> Italic</label>
                     <label><input type="checkbox" v-model="control.labelUnderline"> Underline</label>
