@@ -5,6 +5,12 @@
             <label>
                 <input type="checkbox" name="isInteger" v-model="control.isInteger"> Integer Only
             </label>
+            <label>
+                <input type="checkbox" name="isRequired" v-model="control.required"> Required?
+            </label>
+            <label>
+                <input type="checkbox" name="isReadonly" v-model="control.readonly"> Readonly?
+            </label>
         </div>
 
         <div class="col-md-12">
@@ -14,7 +20,6 @@
                        v-model="control.decimalPlace" :disabled="control.isInteger">
             </div>
         </div>
-        <BaseConfigInputGroup />
     </div>
 </template>
 
