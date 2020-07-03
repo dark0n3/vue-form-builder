@@ -3,7 +3,7 @@
     <div class="row mt-2">
         <div class="col-md-12">
             <label>
-                <input type="checkbox" name="isInteger" v-model="control.isInteger"> Integer Only
+                <input type="checkbox" name="isInteger" v-model="control.isInteger"> Integer Only\
             </label>
             <label>
                 <input type="checkbox" name="isRequired" v-model="control.required"> Required?

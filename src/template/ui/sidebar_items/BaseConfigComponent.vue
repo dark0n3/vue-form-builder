@@ -1,9 +1,9 @@
 <template>
-    <div>
+    <div :class="typeFirstUpper">
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label>ID</label>
+                    <label>iD</label>
                     <input type="text" readonly class="form-control" :value="control.name">
                 </div>
             </div>
@@ -27,6 +27,18 @@
                         <option v-for="(label, value) in widthOptions" :value="value">{{label}}</option>
                     </select>
                 </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-md-12">
+                <label>
+                    <input type="checkbox" name="isRequired" v-model="control.required"> Required?
+                </label>
+
+                <label>
+                    <input type="checkbox" name="isReadonly" v-model="control.readonly"> Readonly?
+                </label>
             </div>
         </div>
     </div>
