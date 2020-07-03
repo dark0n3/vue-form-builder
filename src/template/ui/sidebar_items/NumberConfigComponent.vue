@@ -6,6 +6,7 @@
                 <input type="checkbox" name="isInteger" v-model="control.isInteger"> Integer Only\
             </label>
         </div>
+
         <div class="col-md-12">
             <div class="form-group">
                 <label>Decimal places</label>
@@ -13,7 +14,6 @@
                        v-model="control.decimalPlace" :disabled="control.isInteger">
             </div>
         </div>
-        <BaseConfigInputGroup />
     </div>
 </template>
 
@@ -22,9 +22,6 @@ import BaseConfigInputGroup from 'sethFormBuilder/template/ui/sidebar_items/Base
 
     export default {
         name: "NumberConfigComponent",
-        components: {
-            BaseConfigInputGroup
-        },
         props: {
             control: {
                 type: Object
