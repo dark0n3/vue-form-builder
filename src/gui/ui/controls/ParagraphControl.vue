@@ -2,11 +2,21 @@
     <div>
         <div class="row" v-if="labelPosition === 'left'">
             <div class="col-md-8">
-                <p :value="demo_value">{{control.paragraph}}</p>
+                <p
+                    :value="demo_value"
+                    :class="{'bold': control.labelBold, 'italic': control.labelItalic, 'underline': control.labelUnderline}"
+                >
+                    {{control.paragraph}}
+                </p>
             </div>
         </div>
         <div v-else class="form-group">
-                <p class="modal-title" :value="demo_value">{{control.paragraph}}</p>
+            <p class="modal-title"
+                :value="demo_value"
+                :class="{'bold': control.labelBold, 'italic': control.labelItalic, 'underline': control.labelUnderline}"
+            >
+                {{control.paragraph}}
+            </p>
         </div>
     </div>
 </template>

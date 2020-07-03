@@ -2,13 +2,22 @@
     <div class="controlItemWrapper" :class="control.className" :data-control-name="control.name">
         <div class="controlItem row" :id="control.name" v-if="labelPosition === 'left'">
             <div class="col-md-8 input-group">
-                <p :value="demo_value">{{control.paragraph}}</p>
+                <p
+                    :value="demo_value"
+                    :class="{'bold': control.labelBold, 'italic': control.labelItalic, 'underline': control.labelUnderline}"
+                    >
+                        {{control.paragraph}}
+                    </p>
             </div>
         </div>
         <div class="controlItem row" :id="control.name" v-else>
             <div class="form-group col-md-12">
                 <div class="input-group">
-                    <p :value="demo_value">{{control.paragraph}}</p>
+                    <p :value="demo_value"
+                    :class="{'bold': control.labelBold, 'italic': control.labelItalic, 'underline': control.labelUnderline}"
+                    >
+                        {{control.paragraph}}
+                    </p>
                 </div>
             </div>
         </div>
