@@ -2,11 +2,19 @@
     <div>
         <div class="row" v-if="labelPosition === 'left'">
             <div class="col-md-8">
-                <h4 class="modal-title" :value="demo_value">{{control.header}}</h4>
+                <h4 class="modal-title"
+                :value="demo_value"
+                :class="{'italic': control.labelItalic, 'underline': control.labelUnderline}">
+                    {{control.header}}
+                </h4>
             </div>
         </div>
         <div v-else class="form-group">
-                <h4 class="modal-title" :value="demo_value">{{control.header}}</h4>
+                <h4 class="modal-title"
+                :value="demo_value"
+                :class="{'italic': control.labelItalic, 'underline': control.labelUnderline}">
+                    {{control.header}}
+                </h4>
         </div>
     </div>
 </template>
